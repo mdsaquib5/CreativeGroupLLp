@@ -6,11 +6,7 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// menu js
-// function toggleNav() {
-//     const sidepanel = document.querySelector(".menu");
-//     sidepanel.classList.toggle("navmenu");
-// }
+
 
 function toggleNav() {
     const sidepanel = document.querySelector(".menu");
@@ -375,3 +371,8 @@ if (body.getAttribute('data-run-toc') === 'true') {
         addClassOnResize();
     });
 }
+
+
+
+// Add optimise file
+window.onload=function(){let e=document.createElement("div");e.className="preloader",e.innerHTML='<img src="images/creative-loading.gif" alt="">',document.body.prepend(e);let t=document.getElementById("flexslider"),l=t?t.querySelector("ul"):null;l&&(l.style.opacity="0"),setTimeout((()=>{e.remove(),l&&(l.style.opacity="1")}),111111)};
